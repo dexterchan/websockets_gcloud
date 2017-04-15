@@ -26,7 +26,7 @@ html(lang="en")
         /* The external ip is determined by app.js and passed into the template. */
         var webSocketHost = location.protocol === 'https:' ? 'wss://' : 'ws://';
         var externalIp = $('body').data('external-ip');
-        var webSocketUri =  webSocketHost + externalIp + ':65080/echo';
+        var webSocketUri =  webSocketHost + externalIp + ':9001/echo';
 
         /* Get elements from the page */
         var form = $('#echo-form');
